@@ -8,4 +8,39 @@
 .main-header__logo {
     height: 96px;
 }
-
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: @fontblue;
+  @media (min-width: @tablet-width) {
+    background-color: #FFFFFF;
+   }
+}
+.main-nav__list a {
+   color: #ffffff;
+   text-transform: uppercase;
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 26px;
+   text-decoration: none;
+   @media (min-width: @tablet-width) {
+    color: #000000;
+   }
+}
+@media (min-width: @tablet-width) {
+    main-nav__wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 640px;
+        margin: 0 auto; 
+    }
+    .main-nav__toggle {
+        display: none;
+      }
+}
+@media (min-width: @desktop-width) {
+    .main-nav__wrapper {
+      width: 960px;
+    }
+  }
