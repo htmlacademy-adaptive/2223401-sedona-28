@@ -18,4 +18,25 @@
 .advantages__items {
    text-decoration: none; 
    list-style: none;
+   margin:0;
+   padding: 0;
+   @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 640px;
+    margin: 0 auto;
+  }
+}
+.advantages__container {
+    @media (min-width: @tablet-width) {
+       display: grid;
+       grid-template-columns: 200px 200px 200px;
+      } 
+}
+.advantages__block {
+    @media (min-width: @tablet-width) {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+       }  
 }
