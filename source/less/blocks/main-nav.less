@@ -1,6 +1,6 @@
 .main-nav {
-    position: relative;
-    width: auto;
+    position: absolute;
+    width: 100%;
     background-color: @fontblue;
     @media (min-width: @tablet-width) {
       background-color: @fontwhite;
@@ -36,6 +36,7 @@
     }
     .main-nav--opened  {
       background-color: @fontblue;
+      z-index: 10;
     }
     .main-nav--opened::after {
       content: "";
@@ -75,7 +76,6 @@
       }
     }
   }
-  
   .main-nav__list {
     margin: 0;
     padding: 0;
@@ -104,7 +104,6 @@
           display: none;
         }
   }
-  
   .site-list a {
     position: relative;
     display: block;
@@ -121,7 +120,7 @@
       box-shadow: none;
     }
     @media (min-width: @desktop-width) {
-      padding-left: 91px;
+      padding-left: 123px;
     }
   }
   .site-list__item {
