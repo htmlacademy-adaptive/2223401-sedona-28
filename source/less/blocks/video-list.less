@@ -12,15 +12,28 @@
 }
 .video-item-image {
  position: relative;
+ @media (min-width: @tablet-width) {
+  margin-left: 60px;
+  margin-right: 60px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: 200px;
+    margin-right: 200px;
+    }
+}
+.video-item-image-road {
+ width:100%;
 }
 .video-polygon {
     position: absolute;
     top:56px;
     left:176px;
     @media (min-width: @tablet-width) {
-    left: 363px;
+    left: 300px;
+    top:200px;
     }
     @media (min-width: @desktop-width) {
-        left:620px;
+        left:453px;
+        top:220px;
       }
 }

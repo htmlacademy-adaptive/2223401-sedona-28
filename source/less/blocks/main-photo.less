@@ -18,6 +18,10 @@
     margin-left: 60px;
     margin-right: 60px;
   }
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .photo-items {
   list-style: none;
@@ -79,9 +83,10 @@
   color:#000000;
   margin: 0 auto;
   font-size: 14px;
-  margin-left: 20px;
+  text-align: start;
   @media (min-width: @desktop-width) {
       color: #ffffff;
+      margin-left: 20px;
   }
 }
 .photo-item-raiting {
@@ -141,9 +146,10 @@
     grid-auto-flow: column;
   }
     @media (min-width: @desktop-width) {
-      @stats-shift: -86px;
+      @stats-shift: -89px;
       top: @stats-shift;
       margin-bottom: @stats-shift;
+      padding-top: 0;
       background-color: rgba(0, 0, 0, 0.3);
      color: #ffffff;
     }
@@ -159,6 +165,7 @@
 }
 .photo-item-image {
   display: block;
+  width:100%;
 }
 .photo-item-author {
   @media (min-width: @tablet-width) {

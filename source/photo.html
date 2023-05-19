@@ -56,7 +56,11 @@
       <ul class="photo-items">
         <li class="photo-item">
           <a class="photo-item-link" href="#">
+            <picture>
+            <source media="(min-width: 1200px)" srcset="images/open-spaces-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="images/open-space-tablet.jpg">
             <img class="photo-item-image" src="images/open-spaces.jpg" width="280" height="280" alt="Дорога в Седону.">
+          </picture>
           </a>   
             <div class="photo-item-info">
             <h3 class="photo-item-title title">Народные просторы</h3>
@@ -67,8 +71,10 @@
         </li>
         <li class="photo-item">
           <a class="photo-item-link" href="#">
+            <picture>
             <img class="photo-item-image" src="images/vegetation.jpg" width="280" height="280"
               alt="Местная растительность.">
+            </picture>
             </a>
               <div class="photo-item-info">
             <h3 class="photo-item-title title">Местная растительность</h3>
@@ -105,12 +111,16 @@
       <h2 class="video-item title">Всё ещё сомневаетесь</h2>
       <p class="video-item-description description">Смотрите видеопрезентацию и скорее за билетами, пока они<br> не подорожали в
         очередной раз!</p>
-      <div class="video-item-image">
-        <img src="images/video-road.jpg" width="280" height="177" alt="Дорога по каньону.">
+        <div class="video-item-image">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="images/video-road-desktop.jpg">
+          <source media="(min-width: 768px)" srcset="images/video-road-tablet.jpg">
+        <img class="video-item-image-road" src="images/video-road.jpg" width="280" height="177" alt="Дорога по каньону.">
         <svg class="video-polygon" width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M48 27L0 54L2.42273e-06 0L48 27Z" fill="white" fill-opacity="0.7"/>
-          </svg>          
-      </div>
+          </svg> 
+        </picture>  
+      </div>       
     </section>
   </main>
   <footer class="main-footer">

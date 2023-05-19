@@ -73,10 +73,16 @@
     padding: 37px 18px;
     text-align: center;
     text-transform: uppercase;
+    @media (min-width: @tablet-width) {
+        padding: 12px 18px;
+       }  
+       @media (min-width: @desktop-width) {
+        padding: 12px 18px;
+       }  
 }
 
 .advantages__item--modifier:first-child {
-    padding-top: 50px;
+    padding-top: 45px;
 }
 .advantages__item--modifier:first-child::before {
     top: -15px;
@@ -91,10 +97,13 @@
 }
 .advantages-item-img {
     display: block;
+    @media (min-width: @tablet-width) {
+        width: 100%;
+       }  
 }
 
 .advantages__item .description {
-    padding: 0 50px;
+    padding: 0 10px;
 }
 .advantages__item-prevision {
     background-color: #EEEEEE;
@@ -103,7 +112,7 @@
     text-align: center;
     text-transform: uppercase;
     @media (min-width: @tablet-width) {
-        padding: 41px 33px;
+        padding: 30px 20px;
     }
     @media (min-width: @desktop-width) {
         padding: 52px 50px;
