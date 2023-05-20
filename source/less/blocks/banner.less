@@ -1,80 +1,72 @@
 .welcome {
     text-align: center;
-    height: 389px;
-    //position: relative;
+    position: relative;
    background-color: #747272;
     background-image: url("../images/sedona-mountain.svg");
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
     @media (min-width: @tablet-width) {
-      height: 518px;
+      
     }
 }
 
   .welcome__image {
-    width: 282px;
-    height: 214px;
-    margin-top: 90px;
+    padding-top: 90px;
+    padding-bottom: 85px;
     @media (min-width: @tablet-width) {
         width: 461px;
         height: 350px;
-        margin-top: 78px;
+        padding-top: 77px;
+    padding-bottom: 92px;
       }
   }
 
-  .welcome::before {
-    top:389px;
-    left:-398px;
+  .welcome::after {
+    left:50%;
+    bottom:0;
+    transform: translateX(-50%);
     content: "";
     position: absolute;
     width: 1200px;
     height: 57px;
     background: url("../images/intro-triangle.svg") no-repeat 0 0;
-    @media (min-width: @tablet-width) {
-      top:518px;
-      left:-217px;
-    }
-    @media (min-width: @desktop-width) {
-      left:38px;
-    }
   }
   .banner {
     text-align: center;
-    height: 158px;
+    position: relative;
+    padding-top: 52px;
+    padding-bottom: 67px;
     background-color: #747272;
     background-image: url("../images/mountain-sedona.svg");
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
     @media (min-width: @tablet-width) {
-      height: 290px;
+      padding-top: 95px;
+    padding-bottom: 118px;
       background-image: url("../images/mountain-sedona1200.svg");
       @media (min-resolution: 2dppx) {
+        padding-top: 52px;
+    padding-bottom: 67px;
         background-image: url("../images/mountain-sedona-2x.jpg");
         background-size: 1338px auto;
       }
     }
     @media (min-width: @desktop-width) {
-      height: 301px;
+      padding-top: 101px;
+      padding-bottom: 120px;
     }
   }
   .banner::after {
-    top: 158px;
-    left: -398px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     content: "";
     position: absolute;
     width: 1200px;
     height: 57px;
     background: url(../images/intro-triangle.svg) no-repeat 0 0;
-    @media (min-width: @tablet-width) {
-      top: 290px;
-    left: -217px;
-    }
-    @media (min-width: @desktop-width) {
-      top: 300px;
-    left: 42px;
-    }
 }
   .banner__image {
     margin-top: 52px;
