@@ -6,9 +6,6 @@
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
-    @media (min-width: @tablet-width) {
-      
-    }
 }
 
   .welcome__image {
@@ -47,8 +44,6 @@
     padding-bottom: 118px;
       background-image: url("../images/mountain-sedona1200.svg");
       @media (min-resolution: 2dppx) {
-        padding-top: 52px;
-    padding-bottom: 67px;
         background-image: url("../images/mountain-sedona-2x.jpg");
         background-size: 1338px auto;
       }
@@ -68,9 +63,9 @@
     height: 57px;
     background: url(../images/intro-triangle.svg) no-repeat 0 0;
 }
-  .banner__image {
-    margin-top: 52px;
-    @media (min-width: @tablet-width) {
-      margin-top: 95px;
-    }
+.banner__image {
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    height: 79px;
   }
+}

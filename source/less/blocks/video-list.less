@@ -1,5 +1,16 @@
 .video-list {
     text-align: center;
+    @media (min-width: @tablet-width) {
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-bottom: 44px;
+      padding-top: 58px;
+      }
+      @media (min-width: @desktop-width) {
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-bottom: 84px;
+        }
 }
 .video-item-description {
     padding-left: 63px;
@@ -9,17 +20,13 @@
           display: none;
         }
       }
+      @media (min-width: @tablet-width) {
+        padding-top: 30px;
+        padding-bottom: 66px;
+        }
 }
 .video-item-image {
  position: relative;
- @media (min-width: @tablet-width) {
-  margin-left: 60px;
-  margin-right: 60px;
-  }
-  @media (min-width: @desktop-width) {
-    margin-left: 200px;
-    margin-right: 200px;
-    }
 }
 .video-item-image-road {
  width:100%;
@@ -36,4 +43,8 @@
         left:453px;
         top:220px;
       }
+}
+.video-item.title {
+margin: 0;
+padding: 0;
 }
