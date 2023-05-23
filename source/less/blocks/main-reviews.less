@@ -4,6 +4,7 @@
     @media (min-width: @tablet-width) {
         padding-left: 60px;
     padding-right: 60px;
+    margin-bottom: 64px;
     }
     @media (min-width: @desktop-width) {
         padding-left: 120px;
@@ -70,35 +71,35 @@
 .list__block-field {
     background-color: #F2F2F2;
     border: none;
-    padding: 16px 16px;
+    padding: 14px 16px;
 }
 .button-contact {
 border:none;
 padding: 13px 15px;
 background-color: #E6E6E6;
 position: absolute;
-top:83px;
+top:100px;
 right:0;
 @media (min-width: @tablet-width) {
     top:110px;
 }
 @media (min-width: @desktop-width) {
-    top:109px;
+    top:126px;
 }
 }
 .button-contact-mail {
-    top:152px;
+    top:187px;
     padding: 15px 15px;
     @media (min-width: @tablet-width) {
         top:197px;
     }
     @media (min-width: @desktop-width) {
-        top:198px;
+        top:233px;
     }
 }
 .list-blockname::before {
     position: absolute;
-    top:302px;
+    top:345px;
     left: 0;
     content: "";
     width: 320px;
@@ -111,12 +112,12 @@ right:0;
         height: 100%;
     }
     @media (min-width: @desktop-width) {
-        left:519px;
+        left:482px;
     }
 }
 .list-blockcontacts::before {
     position: absolute;
-    top:240px;
+    top:265px;
     left: 0;
     content: "";
     width: 320px;
@@ -252,19 +253,18 @@ content: "";
     color: #333333;
     text-transform: uppercase;
     padding-left: 17px;
+    padding-top: 16px;
 }
 .list__block-field::placeholder {
-    font-size: 18px;
-    font-weight: 700;
     color: rgba(0, 0, 0, 0.3);
 }
 .field-name::placeholder {
-    color:#000000;
+    color: rgba(0, 0, 0, 0.3);
 }
 .textarea {
     box-sizing: border-box;
     background-color: #F2F2F2;
-    resize: vertical;
+    resize: none;
     padding: 16px 16px;
     border: none;
     width: 100%;
@@ -346,13 +346,12 @@ content: "";
 }
 .content-filter-list {
     @media (min-width: @tablet-width) {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 0;
-        gap: 130px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 140px;
         @media (min-width: @desktop-width) {
-            gap:68px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            padding-left: 100px;
         }
     }
 }
