@@ -1,0 +1,71 @@
+.welcome {
+    text-align: center;
+    position: relative;
+   background-color: #747272;
+    background-image: url("../images/sedona-mountain.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+  .welcome__image {
+    padding-top: 90px;
+    padding-bottom: 85px;
+    @media (min-width: @tablet-width) {
+        width: 461px;
+        height: 350px;
+        padding-top: 77px;
+    padding-bottom: 92px;
+      }
+  }
+
+  .welcome::after {
+    left:50%;
+    bottom:0;
+    transform: translateX(-50%);
+    content: "";
+    position: absolute;
+    width: 1200px;
+    height: 57px;
+    background: url("../images/intro-triangle.svg") no-repeat 0 0;
+  }
+  .banner {
+    text-align: center;
+    position: relative;
+    padding-top: 52px;
+    padding-bottom: 67px;
+    background-color: #747272;
+    background-image: url("../images/mountain-sedona.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    @media (min-width: @tablet-width) {
+      padding-top: 95px;
+    padding-bottom: 118px;
+      background-image: url("../images/mountain-sedona1200.svg");
+      @media (min-resolution: 2dppx) {
+        background-image: url("../images/mountain-sedona-2x.jpg");
+        background-size: 1338px auto;
+      }
+    }
+    @media (min-width: @desktop-width) {
+      padding-top: 101px;
+      padding-bottom: 120px;
+    }
+  }
+  .banner::after {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    position: absolute;
+    width: 1200px;
+    height: 57px;
+    background: url(../images/intro-triangle.svg) no-repeat 0 0;
+}
+.banner__image {
+  @media (min-width: @tablet-width) {
+    width: 460px;
+    height: 79px;
+  }
+}
