@@ -7,13 +7,19 @@
     padding: 0;
     padding-top: 32px;
         padding-bottom: 16px;
+        padding-left: 18px;
+        padding-right: 18px;
     @media (min-width: @tablet-width) {
         padding-top: 48px;
         padding-bottom: 56px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
     @media (min-width: @desktop-width) {
         padding-top: 59px;
         padding-bottom: 44px;
+        padding-left: 120px;
+        padding-right: 120px;
     }
 }
 .advantages__title {
@@ -22,6 +28,8 @@
     line-height: 26px;
     font-weight: 700;
     text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
     @media (max-width: @mobile-width-only) {
         br {
           display: none;
@@ -34,6 +42,7 @@
     line-height: 21px;
     font-weight: 400;
     text-align: center;
+    margin: 0;
     @media (max-width: @tablet-width) {
         br {
           display: none;
@@ -55,7 +64,6 @@
     padding-left: 18px;
     padding-right: 18px;
     padding-top: 23px;
-    padding-bottom: 30px;
     list-style: none;
     @media (min-width: @tablet-width) {
        display: grid;
@@ -63,11 +71,12 @@
        grid-column-start: 1;
     grid-column-end: 4;
     text-align: center;
+    gap:75px;
+    padding-top: 60px;
       } 
       @media (min-width: @desktop-width) {
-    padding-top: 69px;
-    padding-bottom: 69px;
-       } 
+        padding-top: 69px;
+      }
 }
 .advantages__block {
     @media (min-width: @tablet-width) {
@@ -131,6 +140,8 @@
 }
 
 .advantages__item .description {
+    margin: 0;
+    padding: 0;
     @media (min-width: @tablet-width) {
         padding: 0 22px;
     }
@@ -171,12 +182,37 @@
 .advantages__item-prevision:last-child:before {
  display: none;
 }
+.advantages__item-container {
+ margin: 0;
+ margin-bottom: 25px;
+ @media (min-width: @tablet-width) {
+    margin-bottom: 60px;
+}
+@media (min-width: @desktop-width) {
+    margin-bottom: 69px;
+}
+}
 .advantages__item-container .title {
+    text-align: start;
+    margin: 0;
+    padding: 8px 45px;
     @media (min-width: @tablet-width) {
         padding-top: 110px;
+        text-align: center;
+    }
+}
+.advantages__item-container .description {
+    margin: 0;
+    padding-top: 10px;
+    padding-left: 45px;
+    @media (min-width: @tablet-width) {
+        padding-left: 0;
     }
 }
 .advantages__item .title {
+    margin:0;
+    padding: 0;
+    padding-top: 16px;
     @media (min-width: @tablet-width) {
         padding-left: 29px;
         padding-right: 29px;
