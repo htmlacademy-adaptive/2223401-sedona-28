@@ -52,7 +52,7 @@ right:0;
         top:233px;
     }
 }
-.list-blockname::before {
+.block-name-contact::before {
     position: absolute;
     top:345px;
     left: 0;
@@ -62,12 +62,10 @@ right:0;
     background-color: #E5E5E5;
     @media (min-width: @tablet-width) {
         top:11px;
-        left: 325px;
+        left: 50%;
+        transform: translateX(-50%);
         width: 1px;
-        height: 100%;
-    }
-    @media (min-width: @desktop-width) {
-        left:482px;
+        height: calc(100% - 40px);
     }
 }
 .list-blockcontacts::before {
@@ -85,7 +83,7 @@ right:0;
 .list-blockimpression {
     position: relative;
 }
-.list-blockimpression::before {
+.list-blockimpression-title::before {
     position: absolute;
     top:307px;
     left: 0;
@@ -101,7 +99,7 @@ right:0;
         width:280px;
     }
 }
-.list-blockimpression::after {
+.list-blockimpression-title::after {
     @media (min-width: @tablet-width) {
         position: absolute;
         top:39px;
@@ -121,7 +119,7 @@ right:0;
         margin-bottom: 40px;
     }
 }
-.list-blockattractions::before {
+.list-blockattractions-title::before {
     position: absolute;
     top:408px;
     left: 0;
@@ -137,7 +135,7 @@ right:0;
         width:280px;
     }
 }
-.list-blockattractions::after {
+.list-blockattractions-title::after {
     @media (min-width: @tablet-width) {
         position: absolute;
         top:50px;
@@ -243,7 +241,7 @@ content: "";
     margin-bottom: 21px;
     position: relative;
 }
-.list-blockemojin::before {
+.list-blockemojin-title::before {
     @media (min-width: @tablet-width) {
         position: absolute;
         top:16px;
@@ -257,7 +255,7 @@ content: "";
         width:280px;
     }
 }
-.list-blockemojin::after {
+.list-blockemojin-title::after {
     @media (min-width: @tablet-width) {
         position: absolute;
         top:16px;
@@ -284,9 +282,15 @@ content: "";
 }
 .block-name-contact {
     @media (min-width: @tablet-width) {
-    display: flex;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     padding: 0;
+    gap: 60px;
+    }
+    @media (min-width: @desktop-width) {
+        gap: 105px; 
     }
 }
 .content-radio-field {
@@ -328,4 +332,10 @@ content: "";
         grid-template-columns: 1fr 1fr 1fr;
         padding-left: 100px;
     }
+}
+.content-radio-item {
+    padding-top: 20px;
+}
+.content-filter-item {
+    padding-top: 20px;
 }

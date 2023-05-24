@@ -6,16 +6,20 @@
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
+    padding: 90px 18px 85px 18px;
+    @media (min-width: @tablet-width) {
+    padding: 77px 60px 92px 60px;
+      }
+    @media (min-width: @desktop-width) {
+      padding-left: 120px;
+      padding-bottom: 120px;
+    }
 }
 
   .welcome__image {
-    padding-top: 90px;
-    padding-bottom: 85px;
     @media (min-width: @tablet-width) {
         width: 461px;
         height: 350px;
-        padding-top: 77px;
-    padding-bottom: 92px;
       }
   }
 
@@ -34,6 +38,8 @@
     position: relative;
     padding-top: 52px;
     padding-bottom: 67px;
+    padding-left: 18px;
+    padding-right: 18px;
     background-color: #747272;
     background-image: url("../images/mountain-sedona.svg");
     background-repeat: no-repeat;
@@ -41,7 +47,9 @@
     background-size: cover;
     @media (min-width: @tablet-width) {
       padding-top: 95px;
-    padding-bottom: 118px;
+    padding-bottom: 119px;
+    padding-left: 60px;
+    padding-right: 60px;
       background-image: url("../images/mountain-sedona1200.svg");
       @media (min-resolution: 2dppx) {
         background-image: url("../images/mountain-sedona-2x.jpg");
@@ -51,6 +59,8 @@
     @media (min-width: @desktop-width) {
       padding-top: 101px;
       padding-bottom: 120px;
+      padding-left: 120px;
+    padding-right: 120px;
     }
   }
   .banner::after {
