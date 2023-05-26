@@ -44,7 +44,7 @@
   .photo-item:last-child::after {
     position: absolute;
       left: 0;
-      top: 390px;
+      top: 449px;
       content: "";
       width: 320px;
       height: 1px;
@@ -71,6 +71,7 @@
     padding-left: 35px;
     padding-top: 16px;
     font-weight: 700;
+    position: relative;
     @media (min-width: @tablet-width) {
       grid-row-start: 1;
       grid-row-end: 3;
@@ -92,25 +93,20 @@
       position: absolute;
       background: url("../images/like-icon.svg") no-repeat 0 0;
       left:2px;
-      top:340px;
+      bottom:2px;
       @media (min-width: @tablet-width) {
-        left:244px;
-        top:32px;
         z-index: 150;
        }
        @media (min-width: @desktop-width) {
-        left: 283px;
-        top:34px;
         background: url("../images/like-icon-white.svg") no-repeat 0 0;
       }
   }
   .text-class::before {
     @media (min-width: @tablet-width) {
-      left:555px;
+      left:70px;
     }
     @media (min-width: @desktop-width) {
-      left: 1075px;
-      top:34px;
+      left: 190px;
     }
   }
   .photo-item-info {
