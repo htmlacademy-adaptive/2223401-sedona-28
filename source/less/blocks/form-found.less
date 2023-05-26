@@ -1,22 +1,40 @@
 .form-found {
   padding-top:38px;
   padding-bottom: 49px;
+  padding-left: 18px;
+  padding-right: 18px;
     text-align: center;
     @media (min-width: @tablet-width) {
       padding-top:60px;
       padding-bottom: 55px;
+      padding-left: 60px;
+  padding-right: 60px;
     }
     @media (min-width: @desktop-width) {
       padding-bottom: 66px;
+      padding-left: 120px;
+      padding-right: 120px;
     }
 }
+.form-found__title {
+  margin: 0;
+  margin-bottom: 30px;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 44px;
+  }
+}
 .form-found__description {
- padding-left: 45px;
- padding-right: 45px;
+  margin: 0;
+ padding-left: 29px;
+ padding-right: 29px;
+ margin-bottom: 32px;
  @media (max-width: @mobile-width-only) {
     br {
       display: none;
     }
+  }
+  @media (min-width: @tablet-width) {
+    margin-bottom: 44px;
   }
 }
 .form-found__button {
