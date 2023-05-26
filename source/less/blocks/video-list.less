@@ -28,21 +28,24 @@
 .video-item-image {
  position: relative;
 }
+.video-polygon {
+  position: absolute;
+  background: url("../images/polygon.svg") no-repeat 0 0;
+  width: 48px;
+  height: 54px;
+  top:56px;
+  left:176px;
+  @media (min-width: @tablet-width) {
+  left: 300px;
+  top:200px;
+  }
+  @media (min-width: @desktop-width) {
+      left:380px;
+      top:220px;
+    }
+}
 .video-item-image-road {
  width:100%;
-}
-.video-polygon {
-    position: absolute;
-    top:56px;
-    left:176px;
-    @media (min-width: @tablet-width) {
-    left: 300px;
-    top:200px;
-    }
-    @media (min-width: @desktop-width) {
-        left:380px;
-        top:220px;
-      }
 }
 .video-item.title {
 margin: 0;

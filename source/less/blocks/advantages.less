@@ -60,40 +60,21 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-.advantages__container {
-    padding-left: 18px;
-    padding-right: 18px;
-    padding-top: 23px;
-    list-style: none;
-    @media (min-width: @tablet-width) {
-       display: grid;
-       grid-template-columns: 1fr 1fr 1fr;
-       grid-column-start: 1;
-    grid-column-end: 4;
-    text-align: center;
-    gap:75px;
-    padding-top: 60px;
-      } 
-      @media (min-width: @desktop-width) {
-        padding-top: 69px;
-      }
-}
 .advantages__block {
     @media (min-width: @tablet-width) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-       }  
+    }  
 }
-
 .advantages__item--picture {
     @media (min-width: @tablet-width) {
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-column-start: 1;
         grid-column-end: 4;
-       }  
+    }  
 }
-.advantages__item--modifier {
+.advantages__item-block {
     background-color: #81B3D2;
     color: #FFFFFF;
     padding: 37px 18px;
@@ -106,8 +87,7 @@
         padding: 12px 18px;
        }  
 }
-
-.advantages__item--modifier:first-child {
+.advantages__item-block:first-child {
     position: relative;
     padding-top: 45px;
     @media (min-width: @tablet-width) {
@@ -117,12 +97,12 @@
         padding-top: 35px;
        }  
 }
-.advantages__item--modifier-reverse {
+.advantages__item-block--reverse {
     @media (min-width: @tablet-width) {
         order: 2;
     }
 }
-.advantages__item--modifier:first-child::before {
+.advantages__item-block:first-child::before {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -138,7 +118,6 @@
     display: block;
         width: 100%;
 }
-
 .advantages__item .description {
     margin: 0;
     padding: 0;
@@ -220,9 +199,8 @@
     @media (min-width: @desktop-width) {
         padding-left: 92px;
         padding-right: 92px;
-           }
-}
-      
+    }
+}    
 .advantages__item-icon-house {
     background-image: url("../images/icon-house.svg");
     background-repeat: no-repeat;

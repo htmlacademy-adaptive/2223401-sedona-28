@@ -58,20 +58,19 @@
         <h2 class="advantages__description description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
         </h2>
       </header>
-      <ul class="advantages__items">
+      <ol class="advantages__items">
         <li class="advantages__item advantages__item--picture ">
-          <div class="advantages__item--modifier">
+          <div class="advantages__item-block">
             <h3 class="advantages__item title">НАСТОЯЩИЙ ГОРОДОК</h3>
             <p class="advantages__item number">— №1 —</p>
             <p class="advantages__item description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
           </div>
           <picture>
-            <source media="(min-width: 1200px)" srcset="images/city-desktop1x.jpg, images/city-desktop2x.jpg">
-            <source media="(min-width: 768px)" srcset="images/city@1x.jpg, images/city@2x.jpg 2x">
+            <source media="(min-width: 1200px)" srcset="images/city-desktop1x.jpg 1x, images/city-desktop2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="images/city@1x.jpg 1x, images/city@2x.jpg 2x">
           <img class="advantages-item-img" src="images/city.jpg" width="520" height="260" alt="Администрация города Седона.">
         </picture>
         </li>
-        <ul class="advantages__container">
         <li class="advantages__item-container advantages__item-icon-house">
           <h4 class="advantages__item-container title">Жилье</h4>
           <p class="advantages__item-container description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -84,35 +83,34 @@
           <h4 class="advantages__item-container title">Сувениры</h4>
           <p class="advantages__item-container description">Не только китайского,<br> но и местного производства!</p>
         </li>
-      </ul>
         <li class="advantages__item advantages__item--picture advantages__item--picture-reverse">
-          <div class="advantages__item--modifier advantages__item--modifier-reverse">
+          <div class="advantages__item-block advantages__item-block--reverse">
             <h3 class="advantages__item title">Там есть Мост дьявола</h3>
             <p class="advantages__item number">— №2 —</p>
             <p class="advantages__item description">Да, по нему можно пройти!<br> Если вы осмелитесь, конечно</p>
           </div>
           <picture>
-            <source media="(min-width: 1200px)" srcset="images/bridge-desktop1x.jpg, images/bridge-desktop2x.jpg">
-            <source media="(min-width: 768px)" srcset="images/bridge@1x.jpg, images/bridge@2x.jpg 2x">
-          <img class="advantages-item-img"src="images/bridge.jpg" width="520" height="260" alt="Мост Дьявола.">
+            <source media="(min-width: 1200px)" srcset="images/bridge-desktop1x.jpg 1x, images/bridge-desktop2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="images/bridge@1x.jpg 1x, images/bridge@2x.jpg 2x">
+          <img class="advantages-item-img" src="images/bridge.jpg" width="520" height="260" alt="Мост Дьявола.">
           </picture>
         </li>
         <li class="advantages__item advantages__item-prevision">
           <h3 class="advantages__item title">Небольшая площадь</h3>
           <p class="advantages__item number">— №3 —</p>
-          <p class="advantages__item--description">Все интересные места находятся очень близко</p>
+          <p class="advantages__item description">Все интересные места находятся очень близко</p>
         </li>
         <li class="advantages__item advantages__item-prevision">
           <h3 class="advantages__item title">Красивая дорога</h3>
           <p class="advantages__item number">— №4 —</p>
-          <p class="advantages__item--description">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+          <p class="advantages__item description">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
         </li>
         <li class="advantages__item advantages__item-prevision">
           <h3 class="advantages__item title">Мало туристов</h3>
           <p class="advantages__item number">— №5 —</p>
-          <p class="advantages__item--description">Большинство едет в Гранд-Каньон и толпится там</p>
+          <p class="advantages__item description">Большинство едет в Гранд-Каньон и толпится там</p>
         </li>
-      </ul>
+      </ol>
     </section>
     <section class="form-found">
       <h2 class="form-found__title title">Заинтересовались?</h2>
@@ -130,9 +128,9 @@
   <footer class="main-footer">
       <div class="visitsedona">#visitSEDONA
       </div>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-link social-link--vkontakte" href="https://vk.com/htmlacademy">
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="48" height="48" fill="currentColor"/>
               <g clip-path="url(#clip0_68326_473)">
@@ -140,7 +138,7 @@
               </g>
               <defs>
               <clipPath id="clip0_68326_473">
-              <rect class="social__link-img" width="24" height="24" fill="white" transform="translate(12 12)"/>
+              <rect width="24" height="24" fill="white" transform="translate(12 12)"/>
               </clipPath>
               </defs>
               </svg>                
@@ -148,8 +146,8 @@
             </span>
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+        <li class="social-item">
+          <a class="social-link social-link--telegram" href="https://t.me/htmlacademy">
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect  width="48" height="48" fill="currentColor"/>
               <path d="M34.4393 16.6223L31.2705 31.566C31.0313 32.6205 30.408 32.883 29.5223 32.3865L24.6938 28.8285L22.3643 31.0695C22.1063 31.3275 21.891 31.5428 21.3938 31.5428L21.741 26.6258L30.6893 18.54C31.0785 18.1935 30.6045 18.0008 30.0848 18.348L19.0223 25.314L14.2598 23.823C13.224 23.4998 13.2053 22.7873 14.4758 22.29L33.1035 15.1133C33.966 14.79 34.7205 15.3053 34.4393 16.623V16.6223Z" fill="white"/>
@@ -158,8 +156,8 @@
             </span>
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+        <li class="social-item">
+          <a class="social-link social-link--youtube" href="https://www.youtube.com/user/htmlacademyru">
             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect  width="48" height="48" fill="currentColor"/>
               <path d="M31.1813 17H16.8133C15.3062 17 14 18.3 14 19.8V28.1C14 29.7 15.3062 31 16.8133 31H31.1813C32.7889 31 33.9946 29.7 33.9946 28.2V19.8C34.095 18.3 32.7889 17 31.1813 17ZM21.0333 27.4V20.6L27.8656 24L21.0333 27.4Z" fill="white"/>
