@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,26 +52,24 @@
       <img class="banner__image" src="images/sedona.svg" width="229" height="39" alt="Седона.">
     </div>
     <section class="reviews">
-      <div class="reviews__wrapper">
         <h2 class="reviews__title title">Оставьте свой отзыв</h2>
         <p class="reviews__description description">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br> а также о посещенных
           вами достопримечательностях</p>
-      </div>
       <form class="form-feedback" action="https://echo.htmlacademy.ru/courses" method="post">
          <div class="block-name-contact">
         <div class="list-blockname">
             <h3 class="list-blockname-title title">Представьтесь:</h3>
             <label class="nameblock" for="name">Имя:</label>
-            <input class="list__block-field field-name" type="text" id="name" name="name" value="Пётр" placeholder="Имя">
+            <input class="block-field field-name" type="text" id="name" name="name" value="Пётр" placeholder="Имя">
             <label class="nameblock" for="surname">Фамилия:</label>
-            <input class="list__block-field field-name" type="text" id="surname" name="surname" value="Пустота" placeholder="Фамилия">
+            <input class="block-field field-name" type="text" id="surname" name="surname" value="Пустота" placeholder="Фамилия">
             <label class="nameblock" for="patronymic">Отчество:</label>
-            <input class="list__block-field field-name" type="text" id="patronymic" name="patronymic" value="Викторович" placeholder="Отчество">
+            <input class="block-field field-name" type="text" id="patronymic" name="patronymic" value="Викторович" placeholder="Отчество">
           </div>
           <div class="list-blockcontacts">
             <h3 class="list-blockcontacts-title title">Контактная информация:</h3>
             <label class="nameblock" for="tel">Контактный телефон*:</label>
-            <input class="list__block-field" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон"
+            <input class="block-field" type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон"
               required>
             <button class="button-contact" type="submit">
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,7 +79,7 @@
               <span class="visually-hidden">Позвонить</span>
             </button>
             <label class="nameblock" for="email">Электронная почта*:</label>
-            <input class="list__block-field" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+            <input class="block-field" type="email" id="email" name="email" placeholder="Введите e-mail" required>
             <button class="button-contact button-contact-mail" type="submit">
               <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8 8C7.7 8 7.5 7.9 7 7.7L0 4V11C0 11.5 0.5 12 1 12H15C15.5 12 16 11.5 16 11V4L9 7.7C8.5 7.9 8.3 8 8 8ZM15 0H1C0.5 0 0 0.5 0 1V1.8L8 6L16 1.8V1C16 0.5 15.5 0 15 0Z" fill="black"/>
@@ -164,9 +161,9 @@
   <footer class="main-footer">
       <div class="visitsedona">#visitSEDONA
       </div>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+        <ul class="social-list">
+          <li class="social-item">
+            <a class="social-link social-link--vkontakte" href="https://vk.com/htmlacademy">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="48" height="48" fill="currentColor"/>
                 <g clip-path="url(#clip0_68326_473)">
@@ -174,7 +171,7 @@
                 </g>
                 <defs>
                 <clipPath id="clip0_68326_473">
-                <rect class="social__link-img" width="24" height="24" fill="white" transform="translate(12 12)"/>
+                <rect width="24" height="24" fill="white" transform="translate(12 12)"/>
                 </clipPath>
                 </defs>
                 </svg>                
@@ -182,8 +179,8 @@
               </span>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+          <li class="social-item">
+            <a class="social-link social-link--telegram" href="https://t.me/htmlacademy">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect  width="48" height="48" fill="currentColor"/>
                 <path d="M34.4393 16.6223L31.2705 31.566C31.0313 32.6205 30.408 32.883 29.5223 32.3865L24.6938 28.8285L22.3643 31.0695C22.1063 31.3275 21.891 31.5428 21.3938 31.5428L21.741 26.6258L30.6893 18.54C31.0785 18.1935 30.6045 18.0008 30.0848 18.348L19.0223 25.314L14.2598 23.823C13.224 23.4998 13.2053 22.7873 14.4758 22.29L33.1035 15.1133C33.966 14.79 34.7205 15.3053 34.4393 16.623V16.6223Z" fill="white"/>
@@ -192,8 +189,8 @@
               </span>
             </a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+          <li class="social-item">
+            <a class="social-link social-link--youtube" href="https://www.youtube.com/user/htmlacademyru">
               <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect  width="48" height="48" fill="currentColor"/>
                 <path d="M31.1813 17H16.8133C15.3062 17 14 18.3 14 19.8V28.1C14 29.7 15.3062 31 16.8133 31H31.1813C32.7889 31 33.9946 29.7 33.9946 28.2V19.8C34.095 18.3 32.7889 17 31.1813 17ZM21.0333 27.4V20.6L27.8656 24L21.0333 27.4Z" fill="white"/>
@@ -216,21 +213,24 @@
     <div class="modal-container">
       <div class="modal modal-mistake">
         <section class="modal-content">
-          <h2 class="modal-title title">Что-то пошло<br> не так</h2>
-          <p class="modal-decription description">Проверьте поля, выделенные красным,<br> скорее всего вы забыли их заполнить</p>
+          <h2 class="modal-title title">Что-то пошло<br> не так!</h2>
+          <p class="modal-decription description">Проверьте поля, выделенные <span class="description-block">красным,<br> скорее всего вы </span>забыли их заполнить</p>
           <button class="modal-button button">Ок</button>
         </section>
       </div>
     </div>
   </div>
-  <div class="modal-window modal-window-open">
+  <div class="modal-window-success modal-window-success-open">
     <div class="modal-container">
       <div class="modal modal-sent">
-        <section class="modal-content">
-          <h2 class="modal-title title">Ваш отзыв отправлен</h2>
-          <p class="modal-decription description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте</p>
-          <button class="modal-button button">Закрыть окно</button>
+        <section class="modal-content-success">
+          <h2 class="modal-title title">Ваш отзыв отправлен!</h2>
+          <p class="modal-decription description">Спасибо за ваше участие, ваш <span class="description-block-success">отзыв уже поступил к нам.<br> В ближайшее время мы <span class="description-block-success">опубликуем его на сайте</span></span></p>
         </section>
+          <div class="modal-button-success">
+          <button class="modal-button-close button">Закрыть окно</button>
+        </div>
+       
       </div>
     </div>
   </div>
