@@ -11,8 +11,8 @@
     padding: 77px 60px 92px 60px;
       }
     @media (min-width: @desktop-width) {
-      padding-left: 120px;
-      padding-bottom: 120px;
+      padding-left: 57px;
+      padding-bottom: 57px;
     }
 }
   .welcome__image {
@@ -23,13 +23,22 @@
   }
   .welcome::after {
     left:50%;
-    bottom:0;
+    bottom:-31px;
     transform: translateX(-50%);
     content: "";
     position: absolute;
-    width: 1200px;
+    width: 320px;
     height: 56px;
-    background: url("../images/intro-triangle.svg") no-repeat 0 0;
+    background: url("../images/bg-intro-triangle-mobile.svg") no-repeat 0 0;
+    @media (min-width: @tablet-width) {
+      background: url("../images/bg-intro-triangle-tablet.svg") no-repeat 0 0;
+      bottom: 0;
+      width: 768px;
+    }
+    @media (min-width: @desktop-width) {
+      background: url("../images/intro-triangle.svg") no-repeat 0 0;
+      width: 1200px;
+    }
   }
   .banner {
     text-align: center;
@@ -62,14 +71,23 @@
     }
   }
   .banner::after {
-    bottom: 0;
-    left: 50%;
+    left:50%;
+    bottom:-31px;
     transform: translateX(-50%);
     content: "";
     position: absolute;
-    width: 1200px;
+    width: 320px;
     height: 56px;
-    background: url(../images/intro-triangle.svg) no-repeat 0 0;
+    background: url("../images/bg-intro-triangle-mobile.svg") no-repeat 0 0;
+    @media (min-width: @tablet-width) {
+      background: url("../images/bg-intro-triangle-tablet.svg") no-repeat 0 0;
+      bottom: 0;
+      width: 768px;
+    }
+    @media (min-width: @desktop-width) {
+      background: url("../images/intro-triangle.svg") no-repeat 0 0;
+      width: 1200px;
+    }
 }
 .banner__image {
   @media (min-width: @tablet-width) {
