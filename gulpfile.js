@@ -43,11 +43,11 @@ const script = () => {
 const optimizeImages = () => {
   return gulp.src('source/images/**/*.{png,jpg}')
   .pipe(squoosh())
-  .pipe(gulp.dest('build/img'))
+  .pipe(gulp.dest('build/images'))
   }
 const copyImages = () => {
-    return gulp.src('../source/images/**/*.{png,jpg}')
-    .pipe(gulp.dest('../build/img/'))
+    return gulp.src('source/images/**/*.{png,jpg}')
+    .pipe(gulp.dest('build/images/'))
   }
 
 // WebP
@@ -56,14 +56,14 @@ const createWebp = () => {
   .pipe(squoosh({
   webp: {}
   }))
-  .pipe(gulp.dest('build/img'))
+  .pipe(gulp.dest('build/images'))
   }
 
 // SVG
 const svg = () =>
 gulp.src('source/images/*.svg')
 .pipe(svgo())
-.pipe(gulp.dest('build/img'));
+.pipe(gulp.dest('build/images'));
 
 // Copy
 
@@ -78,7 +78,7 @@ const copy = (done) => {
   done();
   }
 // Clean
-export const clean = () => {
+const clean = () => {
   return del('build');
   };
 
@@ -87,7 +87,7 @@ export const clean = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -107,7 +107,7 @@ const reload = (done) => {
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(script));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html)).on('change', browser.reload);
 }
 
 // Build
