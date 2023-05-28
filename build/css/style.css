@@ -1102,10 +1102,10 @@ input {
 .control:active .control-input[type="radio"]:checked + .control-mark::before {
   background-color: rgba(51, 51, 51, 0.3);
 }
-.social__link:hover {
+.social-link:hover {
   color: #669EC0;
 }
-.social__link:active {
+.social-link:active {
   color: #5496BD;
   opacity: 0.3;
 }
