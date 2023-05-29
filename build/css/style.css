@@ -407,7 +407,7 @@ input {
 }
 @media (min-width: 1280px) {
   .advantages__header {
-    padding-top: 59px;
+    padding-top: 48px;
     padding-bottom: 45px;
     padding-left: 120px;
     padding-right: 120px;
@@ -1750,16 +1750,9 @@ input {
     padding: 77px 60px 92px 60px;
   }
 }
-@media (min-width: 1280px) {
-  .welcome {
-    padding-left: 57px;
-    padding-bottom: 78px;
-  }
-}
 @media (min-width: 768px) {
   .welcome__image {
     width: 461px;
-    height: 350px;
   }
 }
 .welcome::after {
