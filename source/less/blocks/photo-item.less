@@ -56,11 +56,12 @@
   .photo-item-title {
     color:#000000;
     margin: 0;
+    padding: 0;
     font-size: 14px;
     text-align: start;
     @media (min-width: @desktop-width) {
         color: #ffffff;
-        margin-left: 20px;
+        padding-top: 5px;
     }
   }
   .photo-item-raiting {
@@ -77,13 +78,18 @@
       grid-row-end: 3;
       padding-top: 12px;
      }
+     @media (min-width: @desktop-width)  {
+      padding-top: 17px;
+      padding-left: 77px;
+     }
   }
   .text-class {
    @media (min-width: @tablet-width) {
       padding-left: 100px;
    }
     @media (min-width: @desktop-width) {
-      padding-left: 214px;
+      padding-left: 261px;
+      padding-top: 17px;
     }
   }
   .photo-item-raiting-text::before {
@@ -99,6 +105,7 @@
        }
        @media (min-width: @desktop-width) {
         background: url("../images/like-icon-white.svg") no-repeat 0 0;
+        left: 45px;
       }
   }
   .text-class::before {
@@ -106,7 +113,7 @@
       left:70px;
     }
     @media (min-width: @desktop-width) {
-      left: 190px;
+      left: 229px;
     }
   }
   .photo-item-info {
@@ -125,12 +132,13 @@
       grid-auto-flow: column;
     }
       @media (min-width: @desktop-width) {
-        @stats-shift: -89px;
+        @stats-shift: -80px;
         top: @stats-shift;
         margin-bottom: @stats-shift;
         background-color: rgba(0, 0, 0, 0.3);
        color: #ffffff;
-       padding-bottom: 19px;
+       padding-bottom: 11px;
+       padding-top: 17px;
       }
   }
   .info-road {

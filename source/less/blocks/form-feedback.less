@@ -29,11 +29,11 @@
 .block-field {
     background-color: #F2F2F2;
     border: none;
-    padding: 16px 16px;
+    padding: 19px 16px;
 }
 .button-contact {
 border:none;
-padding: 16px 16px;
+padding: 17px 19px;
 background-color: #E6E6E6;
 position: absolute;
 top:88px;
@@ -44,9 +44,9 @@ right:0;
 }
 .button-contact-mail {
     top:179px;
-    padding: 16px 16px;
+    padding: 19px 19px;
     @media (min-width: @tablet-width) {
-        top:168px;
+        top:171px;
     }
 }
 .list-blockname::before {
@@ -83,7 +83,7 @@ right:0;
     @media (min-width: @tablet-width) {
     padding: 0;
     @media (min-width: @desktop-width) {
-        padding-bottom: 20px;
+        padding-bottom: 24px;
     }
     }
 }
@@ -127,7 +127,7 @@ right:0;
 .list-blockattractions {
     position: relative;
     @media (min-width: @desktop-width) {
-        padding-bottom: 97px;
+        padding-bottom: 60px;
     }
 }
 .list-blockattractions-title {
@@ -135,7 +135,7 @@ right:0;
  margin-top: 24px;
  @media (min-width: @tablet-width) {
     margin-top: 0;
-    padding-top: 20px;
+    padding-top: 22px;
 }
 }
 .list-blockattractions-title::before {
@@ -222,7 +222,7 @@ content: "";
     color: #333333;
     text-transform: uppercase;
     padding-left: 17px;
-    padding-top: 16px;
+    padding-top: 17px;
 }
 .block-field::placeholder {
     color: rgba(0, 0, 0, 0.3);
@@ -234,11 +234,11 @@ content: "";
     box-sizing: border-box;
     background-color: #F2F2F2;
     resize: none;
-    padding: 16px 16px;
+    padding: 19px 16px;
     border: none;
     width: 100%;
-    height: 150px;
-    font-family: "PT Sans", sans-serif;
+    height: 161px;
+    font-family: "PT Sans", "Roboto", sans-serif;
 }
 .textarea::placeholder {
     font-size: 18px;
@@ -251,17 +251,29 @@ content: "";
         display: flex;
         justify-content: space-between;
     }
+    @media (min-width: @desktop-width) {
+        margin-right: 96px;
+        margin-left: 96px;
+    }
 }
 .button-form {
     font-size: 21px;
  font-weight: 700;
  padding: 16px 49px;
+ @media (min-width: @desktop-width) {
+    padding-left: 101px;
+    padding-right: 101px;
+}
 }
 .list-blockemojin {
     margin-bottom: 56px;
     position: relative;
     @media (min-width: @tablet-width) {
-        margin-bottom: 48px;
+        margin-bottom: 44px;
+    }
+    @media (min-width: @desktop-width) {
+        margin-right: 96px;
+        margin-left: 96px;
     }
 }
 .list-blockemojin-title::before {
@@ -280,9 +292,6 @@ content: "";
         content: "";
     height: 1px;
     background-color: #E5E5E5;
-    }
-    @media (min-width: @desktop-width) {
-        width:280px;
     }
 }
 .list-blockemojin-title {
@@ -303,9 +312,6 @@ content: "";
         content: "";
     height: 1px;
     background-color: #E5E5E5;
-    }
-    @media (min-width: @desktop-width) {
-        width:280px;
     }
 }
 .mandatory {
@@ -330,7 +336,7 @@ content: "";
     }
     @media (min-width: @desktop-width) {
         gap: 105px;
-        margin-bottom: 30px;
+        margin-bottom: 9px;
     }
 }
 .content-radio-field {
@@ -349,8 +355,9 @@ content: "";
         padding-left: 140px;
         @media (min-width: @desktop-width) {
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            padding-left: 100px;
-            padding-top: 30px;
+            padding-left: 74px;
+            padding-top: 33px;
+            gap: 59px;
         }
     }
 }
@@ -373,8 +380,9 @@ content: "";
     }
     @media (min-width: @desktop-width) {
         grid-template-columns: 1fr 1fr 1fr;
-        padding-left: 100px;
-        padding-top: 30px;
+        padding-left: 97px;
+        padding-top: 21px;
+        gap:66px;
     }
 }
 .content-radio-item {

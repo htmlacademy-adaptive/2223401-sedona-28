@@ -73,7 +73,7 @@ img {
   border: 0;
   color: #FFFFFF;
   text-transform: uppercase;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 700;
 }
@@ -101,7 +101,7 @@ img {
   font-weight: 400;
 }
 input {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
 }
 @media (max-width: 767px) {
@@ -145,51 +145,8 @@ input {
   .main-footer {
     padding-left: 120px;
     padding-right: 120px;
+    padding-top: 28px;
   }
-}
-.visitsedona {
-  text-align: center;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  text-transform: uppercase;
-  padding-bottom: 30px;
-}
-@media (min-width: 768px) {
-  .visitsedona {
-    padding: 0;
-  }
-}
-.social-list {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 25px;
-}
-@media (min-width: 768px) {
-  .social-list {
-    padding: 0;
-  }
-}
-.social-item {
-  margin-right: 6px;
-}
-.social-link {
-  color: #83B3D3;
-}
-.developer {
-  text-align: center;
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0;
-  gap: 12px;
-}
-.developer__link {
-  color: #000000;
 }
 .main-nav {
   width: 100%;
@@ -301,7 +258,7 @@ input {
 .main-nav__list .site-list__link {
   color: #ffffff;
   text-transform: uppercase;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
@@ -349,56 +306,6 @@ input {
     display: block;
   }
 }
-.welcome {
-  text-align: center;
-  position: relative;
-  background-color: #747272;
-  background-image: url("../images/sedona-mountain.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: cover;
-  padding: 90px 18px 85px 18px;
-}
-@media (min-width: 768px) {
-  .welcome {
-    padding: 77px 60px 92px 60px;
-  }
-}
-@media (min-width: 1280px) {
-  .welcome {
-    padding-left: 57px;
-    padding-bottom: 57px;
-  }
-}
-@media (min-width: 768px) {
-  .welcome__image {
-    width: 461px;
-    height: 350px;
-  }
-}
-.welcome::after {
-  left: 50%;
-  bottom: -31px;
-  transform: translateX(-50%);
-  content: "";
-  position: absolute;
-  width: 320px;
-  height: 56px;
-  background: url("../images/bg-intro-triangle-mobile.svg") no-repeat 0 0;
-}
-@media (min-width: 768px) {
-  .welcome::after {
-    background: url("../images/bg-intro-triangle-tablet.svg") no-repeat 0 0;
-    bottom: 0;
-    width: 768px;
-  }
-}
-@media (min-width: 1280px) {
-  .welcome::after {
-    background: url("../images/intro-triangle.svg") no-repeat 0 0;
-    width: 1200px;
-  }
-}
 .banner {
   text-align: center;
   position: relative;
@@ -430,7 +337,7 @@ input {
 @media (min-width: 1280px) {
   .banner {
     padding-top: 101px;
-    padding-bottom: 120px;
+    padding-bottom: 110px;
     padding-left: 120px;
     padding-right: 120px;
   }
@@ -501,7 +408,7 @@ input {
 @media (min-width: 1280px) {
   .advantages__header {
     padding-top: 59px;
-    padding-bottom: 44px;
+    padding-bottom: 45px;
     padding-left: 120px;
     padding-right: 120px;
   }
@@ -513,7 +420,8 @@ input {
   font-weight: 700;
   text-align: center;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 29px;
+  padding-top: 3px;
 }
 @media (max-width: 767px) {
   .advantages__title br {
@@ -666,14 +574,14 @@ input {
 }
 @media (min-width: 1280px) {
   .advantages__item-container {
-    padding: 166px 28px 71px 28px;
+    padding: 166px 50px 71px 50px;
   }
 }
 .advantages__item-container .title {
   text-align: start;
   margin: 0;
   padding: 0;
-  margin-bottom: 16px;
+  margin-bottom: 25px;
 }
 @media (min-width: 768px) {
   .advantages__item-container .title {
@@ -765,7 +673,8 @@ input {
 }
 @media (min-width: 768px) {
   .form-found__title {
-    margin-bottom: 44px;
+    margin-bottom: 35px;
+    font-size: 30px;
   }
 }
 .form-found__description {
@@ -791,7 +700,7 @@ input {
 }
 @media (min-width: 768px) {
   .form-found__button {
-    padding: 15px 121px 18px 121px;
+    padding: 15px 136px 18px 136px;
   }
 }
 .map {
@@ -812,10 +721,6 @@ input {
   .map iframe {
     background-image: url("../images/map-desktop.jpg");
   }
-}
-.main-photo {
-  display: flex;
-  flex-direction: column;
 }
 .photo-catalog {
   text-align: center;
@@ -842,9 +747,14 @@ input {
     padding-top: 100px;
   }
 }
-.photo-catalog .title {
+.photo-catalog-header {
   margin: 0;
   padding: 0;
+}
+@media (min-width: 1280px) {
+  .photo-catalog-header {
+    font-size: 30px;
+  }
 }
 .photo-catalog .description {
   margin: 0;
@@ -854,8 +764,13 @@ input {
 }
 @media (min-width: 768px) {
   .photo-catalog .description {
-    padding-top: 40px;
+    padding-top: 31px;
     margin-bottom: 67px;
+  }
+}
+@media (min-width: 1280px) {
+  .photo-catalog .description {
+    margin-bottom: 86px;
   }
 }
 .video-list {
@@ -904,6 +819,11 @@ input {
     margin-top: 64px;
   }
 }
+@media (min-width: 1280px) {
+  .video-item-image {
+    margin-top: 59px;
+  }
+}
 .video-polygon {
   position: absolute;
   background: url("../images/polygon.svg") no-repeat 0 0;
@@ -920,7 +840,7 @@ input {
 }
 @media (min-width: 1280px) {
   .video-polygon {
-    left: 380px;
+    left: 375px;
     top: 220px;
   }
 }
@@ -930,6 +850,11 @@ input {
 .video-item.title {
   margin: 0;
   padding: 0;
+}
+@media (min-width: 1280px) {
+  .video-item.title {
+    font-size: 30px;
+  }
 }
 .reviews {
   padding-left: 20px;
@@ -950,10 +875,16 @@ input {
     padding-left: 120px;
     padding-right: 120px;
     padding-top: 115px;
+    padding-bottom: 71px;
   }
 }
 .reviews__title {
   margin: 0;
+}
+@media (min-width: 1280px) {
+  .reviews__title {
+    font-size: 30px;
+  }
 }
 .reviews__description {
   margin: 0;
@@ -976,7 +907,7 @@ input {
 @media (min-width: 1280px) {
   .reviews__description {
     margin-bottom: 68px;
-    padding-top: 20px;
+    padding-top: 32px;
   }
 }
 .modal-window-open {
@@ -1188,11 +1119,11 @@ input {
 .block-field {
   background-color: #F2F2F2;
   border: none;
-  padding: 16px 16px;
+  padding: 19px 16px;
 }
 .button-contact {
   border: none;
-  padding: 16px 16px;
+  padding: 17px 19px;
   background-color: #E6E6E6;
   position: absolute;
   top: 88px;
@@ -1205,11 +1136,11 @@ input {
 }
 .button-contact-mail {
   top: 179px;
-  padding: 16px 16px;
+  padding: 19px 19px;
 }
 @media (min-width: 768px) {
   .button-contact-mail {
-    top: 168px;
+    top: 171px;
   }
 }
 .list-blockname::before {
@@ -1257,7 +1188,7 @@ input {
 }
 @media (min-width: 768px) and (min-width: 1280px) {
   .list-blockimpression {
-    padding-bottom: 20px;
+    padding-bottom: 24px;
   }
 }
 .list-blockimpression-title {
@@ -1310,7 +1241,7 @@ input {
 }
 @media (min-width: 1280px) {
   .list-blockattractions {
-    padding-bottom: 97px;
+    padding-bottom: 60px;
   }
 }
 .list-blockattractions-title {
@@ -1320,7 +1251,7 @@ input {
 @media (min-width: 768px) {
   .list-blockattractions-title {
     margin-top: 0;
-    padding-top: 20px;
+    padding-top: 22px;
   }
 }
 .list-blockattractions-title::before {
@@ -1415,7 +1346,7 @@ input {
   color: #333333;
   text-transform: uppercase;
   padding-left: 17px;
-  padding-top: 16px;
+  padding-top: 17px;
 }
 .block-field::placeholder {
   color: rgba(0, 0, 0, 0.3);
@@ -1427,11 +1358,11 @@ input {
   box-sizing: border-box;
   background-color: #F2F2F2;
   resize: none;
-  padding: 16px 16px;
+  padding: 19px 16px;
   border: none;
   width: 100%;
-  height: 150px;
-  font-family: "PT Sans", sans-serif;
+  height: 161px;
+  font-family: "PT Sans", "Roboto", sans-serif;
 }
 .textarea::placeholder {
   font-size: 18px;
@@ -1447,10 +1378,22 @@ input {
     justify-content: space-between;
   }
 }
+@media (min-width: 1280px) {
+  .list-found {
+    margin-right: 96px;
+    margin-left: 96px;
+  }
+}
 .button-form {
   font-size: 21px;
   font-weight: 700;
   padding: 16px 49px;
+}
+@media (min-width: 1280px) {
+  .button-form {
+    padding-left: 101px;
+    padding-right: 101px;
+  }
 }
 .list-blockemojin {
   margin-bottom: 56px;
@@ -1458,7 +1401,13 @@ input {
 }
 @media (min-width: 768px) {
   .list-blockemojin {
-    margin-bottom: 48px;
+    margin-bottom: 44px;
+  }
+}
+@media (min-width: 1280px) {
+  .list-blockemojin {
+    margin-right: 96px;
+    margin-left: 96px;
   }
 }
 .list-blockemojin-title::before {
@@ -1481,11 +1430,6 @@ input {
     background-color: #E5E5E5;
   }
 }
-@media (min-width: 1280px) {
-  .list-blockemojin-title::before {
-    width: 280px;
-  }
-}
 .list-blockemojin-title {
   margin: 0;
   margin-top: 24px;
@@ -1506,11 +1450,6 @@ input {
     content: "";
     height: 1px;
     background-color: #E5E5E5;
-  }
-}
-@media (min-width: 1280px) {
-  .list-blockemojin-title::after {
-    width: 280px;
   }
 }
 .mandatory {
@@ -1539,7 +1478,7 @@ input {
 @media (min-width: 1280px) {
   .block-name-contact {
     gap: 105px;
-    margin-bottom: 30px;
+    margin-bottom: 9px;
   }
 }
 @media (min-width: 768px) {
@@ -1563,8 +1502,9 @@ input {
 @media (min-width: 768px) and (min-width: 1280px) {
   .content-filter-list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-left: 100px;
-    padding-top: 30px;
+    padding-left: 74px;
+    padding-top: 33px;
+    gap: 59px;
   }
 }
 @media (min-width: 1280px) {
@@ -1590,8 +1530,9 @@ input {
 @media (min-width: 1280px) {
   .content-radio-list {
     grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 100px;
-    padding-top: 30px;
+    padding-left: 97px;
+    padding-top: 21px;
+    gap: 66px;
   }
 }
 .content-radio-item {
@@ -1670,13 +1611,14 @@ input {
 .photo-item-title {
   color: #000000;
   margin: 0;
+  padding: 0;
   font-size: 14px;
   text-align: start;
 }
 @media (min-width: 1280px) {
   .photo-item-title {
     color: #ffffff;
-    margin-left: 20px;
+    padding-top: 5px;
   }
 }
 .photo-item-raiting {
@@ -1696,6 +1638,12 @@ input {
     padding-top: 12px;
   }
 }
+@media (min-width: 1280px) {
+  .photo-item-raiting-text {
+    padding-top: 17px;
+    padding-left: 77px;
+  }
+}
 @media (min-width: 768px) {
   .text-class {
     padding-left: 100px;
@@ -1703,7 +1651,8 @@ input {
 }
 @media (min-width: 1280px) {
   .text-class {
-    padding-left: 214px;
+    padding-left: 261px;
+    padding-top: 17px;
   }
 }
 .photo-item-raiting-text::before {
@@ -1723,6 +1672,7 @@ input {
 @media (min-width: 1280px) {
   .photo-item-raiting-text::before {
     background: url("../images/like-icon-white.svg") no-repeat 0 0;
+    left: 45px;
   }
 }
 @media (min-width: 768px) {
@@ -1732,7 +1682,7 @@ input {
 }
 @media (min-width: 1280px) {
   .text-class::before {
-    left: 190px;
+    left: 229px;
   }
 }
 .photo-item-info {
@@ -1755,11 +1705,12 @@ input {
 }
 @media (min-width: 1280px) {
   .photo-item-info {
-    top: -89px;
-    margin-bottom: -89px;
+    top: -80px;
+    margin-bottom: -80px;
     background-color: rgba(0, 0, 0, 0.3);
     color: #ffffff;
-    padding-bottom: 19px;
+    padding-bottom: 11px;
+    padding-top: 17px;
   }
 }
 @media (min-width: 768px) {
@@ -1783,5 +1734,103 @@ input {
     grid-row-end: 3;
     text-align: start;
   }
+}
+.welcome {
+  text-align: center;
+  position: relative;
+  background-color: #747272;
+  background-image: url("../images/sedona-mountain.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  padding: 90px 18px 85px 18px;
+}
+@media (min-width: 768px) {
+  .welcome {
+    padding: 77px 60px 92px 60px;
+  }
+}
+@media (min-width: 1280px) {
+  .welcome {
+    padding-left: 57px;
+    padding-bottom: 78px;
+  }
+}
+@media (min-width: 768px) {
+  .welcome__image {
+    width: 461px;
+    height: 350px;
+  }
+}
+.welcome::after {
+  left: 50%;
+  bottom: -31px;
+  transform: translateX(-50%);
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 56px;
+  background: url("../images/bg-intro-triangle-mobile.svg") no-repeat 0 0;
+}
+@media (min-width: 768px) {
+  .welcome::after {
+    background: url("../images/bg-intro-triangle-tablet.svg") no-repeat 0 0;
+    bottom: 0;
+    width: 768px;
+  }
+}
+@media (min-width: 1280px) {
+  .welcome::after {
+    background: url("../images/intro-triangle.svg") no-repeat 0 0;
+    width: 1200px;
+  }
+}
+.social-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .social-list {
+    padding: 0;
+  }
+}
+.social-item {
+  margin-right: 6px;
+}
+.social-link {
+  color: #83B3D3;
+}
+.developer {
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 12px;
+}
+.developer__link {
+  color: #000000;
+}
+.visitsedona {
+  text-align: center;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .visitsedona {
+    padding: 0;
+  }
+}
+.main-photo {
+  display: flex;
+  flex-direction: column;
 }
 /*# sourceMappingURL=style.css.map */
